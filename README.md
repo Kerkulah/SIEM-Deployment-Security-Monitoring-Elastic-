@@ -4,12 +4,12 @@
 
 
 <h2>Description</h2>
-This project focuses on setting up and configuring a Kali Linux virtual machine as part of the lab infrastructure. Configured Elastic Agents to enable log collection and data forwarding for comprehensive security monitoring.
+This project focuses on setting up and configuring Kali and Windows virtual machine as part of the lab infrastructure. Configured Elastic Agents to enable log collection and data forwarding for comprehensive security monitoring.
 <br />
 <h2> Utilities Used</h2>
 Oracle VirtualBox      Link https://www.virtualbox.org/wiki/Downloads
 Kali Linux             Link https://www.kali.org/get-kali/#kali-installer-images
-
+Windows                Link https://www.microsoft.com/en-ca/software-download/windows10iso
 <h2> Quick walk-through:</h2>
 
 <p align="center">
@@ -39,12 +39,30 @@ Copy agent to Clipboard and deploy into Kali  <br/>
 <br />
   
 <br />
-Executed Nmap scans and SEToolkit commands to simulate targeted activities within a controlled environment. Accessed and navigated system logs in Elastic Stack to locate and analyze corresponding entries, showcasing proficiency in log management and security event identification. <br/>
-<img src="https://imgur.com/6n4JDTf.jpg"  height="80%" width="80%">
+Elastic dashboard showing top users/hosts for Windows Event 4625 authentication failures <br/>
+<img src="https://imgur.com/K7kftdh.jpg"  height="80%" width="80%">
+<br />
+<br />
+
+<img src="https://imgur.com/Q1tC0Zg.jpg"  height="80%" width="80%">
+<br />
+
+<img src="https://imgur.com/jnwRWam.jpg"  height="80%" width="80%">
+<br />
+<br />
+
+<img src="https://imgur.com/R0ZiSiw.jpg"  height="80%" width="80%">
 <br />
 <br />
 <br />
-Develop a concise visualization and configure alerts for a specific command <br/>
-<img src="https://imgur.com/UNhqN8t.jpg"  height="80%" width="80%">
+Monitoring authentication anomalies: failed logons across all users and admin accounts, disabled user activity, service account RDP usage, and real time group membership changes  <br/>
+<img src="https://imgur.com/ixCzoN2.jpg"  height="80%" width="80%">
+
+<br />
+<br />
+<br />
+
+
+
 <br />
 <br />
