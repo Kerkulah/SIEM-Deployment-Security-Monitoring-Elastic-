@@ -4,7 +4,7 @@
 
 
 <h2>Description</h2>
-This project focuses on setting up and configuring Kali and Windows virtual machine as part of the lab infrastructure. Configured Elastic Agents to enable log collection and data forwarding for comprehensive security monitoring.
+This homelab focuses on setting up and configuring Kali and Windows virtual machine as part of the lab infrastructure. Configured Elastic Agents to enable log collection and data forwarding for comprehensive security monitoring failed logon attempts, successful RDP logon related to service accounts, and users add or removed from a local group within a specific timeframe. 
 <br />
 <h2> Utilities Used</h2>
 Oracle VirtualBox      Link https://www.virtualbox.org/wiki/Downloads
@@ -61,8 +61,22 @@ Monitoring authentication anomalies: failed logons across all users and admin ac
 <br />
 <br />
 <br />
+Successful RDP logon related to service accounts
+<img src="https://imgur.com/LXSyFxL.jpg"  height="80%" width="80%">
+<br />
+<br />
+Users add or removed from a local group within a specific timeframe (2023-03-05) 
+<img src="https://imgur.com/hSHLJWB.jpg"  height="80%" width="80%">
+<br />
+<br />
 
 
+<img src="https://imgur.com/D5xWhfS.jpg"  height="80%" width="80%">
+<br />
+<br />
 
+<img src="https://imgur.com/VmP6tx2.jpg"  height="80%" width="80%">
+<br />
+<br />
 <br />
 <br />
