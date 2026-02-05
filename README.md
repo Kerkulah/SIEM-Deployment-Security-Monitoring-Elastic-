@@ -8,8 +8,11 @@ This homelab focuses on setting up and configuring Kali and Windows virtual mach
 <br />
 <h2> Utilities Used</h2>
 Oracle VirtualBox      Link https://www.virtualbox.org/wiki/Downloads
+<br />
 Kali Linux             Link https://www.kali.org/get-kali/#kali-installer-images
+<br />
 Windows                Link https://www.microsoft.com/en-ca/software-download/windows10iso
+<br />
 <h2> Quick walk-through:</h2>
 
 <p align="center">
