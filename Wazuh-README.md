@@ -68,27 +68,48 @@ What this screenshot confirms:
 <img src="https://imgur.com/1wS8OmZ.jpg"  height="80%" width="80%">
 
 
+
 <br />  
 
 
-What this screenshot confirms:
+Custom Correlation Rule:
 
-- 168 hits in a 30 second window that's real, high volume failed login data actually landing in wazuh-alerts-*, not a config or ingestion problem.
 
-- Every visible document shows rule.description: sshd: authentication failed with rule.id: 5760, data.srcip: 10.10.1.50 (my Kali attacker), data.dstuser: Labuser, data.srcport incrementing per attempt, and agent.name: Ubuntu-Desktop (agent.id: 005), this is the base SSH auth failure event exactly as expected, one per.
-
-- The full log field even shows raw sshd output like Failed password for Labuser from 10.10.1.50 port 38024 ssh2  which is a solid forensic level detail
+- The purpose of this rule is to detect SSH brute force activity by correlating repeated authentication failures from a single source IP.
 
 <br />
 
-<img src="https://imgur.com/1wS8OmZ.jpg"  height="80%" width="80%">
-<br />- />
+<img src="https://imgur.com/QVS2drK.jpg"  height="80%" width="80%">
+<img src="https://imgur.com/ROvRmGc.jpg"  height="80%" width="80%">
 
 <br />
+
+<br />
+
+
+Dashboard Panel: This is a line chart built in Wazuh Dashboard against the wazuh-alerts-* index. This Dashboard shows 
+failed Logins Over Time by Agent.
+
+- Query: rule.groups:authentication_failures; this scopes the panel to SSH/system authentication failure events only.
+
+- Y-axis: Count
+- X-axis: Date Histogram on @timestamp, bucketed per 30 minutes.
+- Split series: Terms aggregation on agent.name, so each monitored endpoint renders as its own line.
+
+This image shows a sharp spike of 530 failed authentication events around 21:00 on the Ubuntu-Desktop agent, tapering off over the following hours as the attack wound down. This peak corresponds directly to the Hydra SSH brute force run I launched from my Kali attacker box, confirming the dashboard accurately captures real time attack volume rather than background noise.
+
+
+
+
+<br />
+
+<img src="https://imgur.com/PMYiJmz.jpg"  height="80%" width="80%">
+
+
 <br />
 
 <p align="center">
 <br/>
 
 
-Verify registration
+
